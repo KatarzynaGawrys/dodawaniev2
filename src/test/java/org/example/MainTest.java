@@ -1,11 +1,12 @@
 package org.example;
 
-import static org.junit.jupiter.api.Assertions.*;
+import junit.framework.TestCase;
 
-class MainTest {
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    @org.junit.jupiter.api.Test
-    void added() {
+public class MainTest extends TestCase {
+
+    public void testAdded() {
         Main main=new Main();
         assertEquals(10, main.added(4,6));
     }
